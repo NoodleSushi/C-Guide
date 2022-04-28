@@ -1,0 +1,1102 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+    
+    
+      
+        <title>ASCII Table - C Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ascii-table" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="C Guide" class="md-header__button md-logo" aria-label="C Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            C Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ASCII Table
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="C Guide" class="md-nav__button md-logo" aria-label="C Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    C Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datatypes/" class="md-nav__link">
+        Datatypes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ASCII Table
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        ASCII Table
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ascii-control-characters" class="md-nav__link">
+    ASCII Control Characters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ascii-printable-characters" class="md-nav__link">
+    ASCII Printable Characters
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operator-precedence-and-associativity/" class="md-nav__link">
+        Operator Precedence and Associativity
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Headers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Headers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Headers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Headers/full-reference/" class="md-nav__link">
+        Full Reference
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Headers/stdio/" class="md-nav__link">
+        stdio.h
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Headers/stdlib/" class="md-nav__link">
+        stdlib.h
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Headers/string/" class="md-nav__link">
+        string.h
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Headers/ctype/" class="md-nav__link">
+        ctype.h
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enum/" class="md-nav__link">
+        Enum
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../struct/" class="md-nav__link">
+        Struct
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ascii-control-characters" class="md-nav__link">
+    ASCII Control Characters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ascii-printable-characters" class="md-nav__link">
+    ASCII Printable Characters
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="ascii-table">ASCII Table</h1>
+<h2 id="ascii-control-characters">ASCII Control Characters</h2>
+<table>
+<thead>
+<tr>
+<th>Decimal</th>
+<th>Character</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>00</code></td>
+<td><code>[NULL]</code></td>
+</tr>
+<tr>
+<td><code>01</code></td>
+<td><code>[START OF HEADING]</code></td>
+</tr>
+<tr>
+<td><code>02</code></td>
+<td><code>[START OF TEXT]</code></td>
+</tr>
+<tr>
+<td><code>03</code></td>
+<td><code>[END OF TEXT]</code></td>
+</tr>
+<tr>
+<td><code>04</code></td>
+<td><code>[END OF TRANSMISSION]</code></td>
+</tr>
+<tr>
+<td><code>05</code></td>
+<td><code>[ENQUIRY]</code></td>
+</tr>
+<tr>
+<td><code>06</code></td>
+<td><code>[ACKNOWLEDGE]</code></td>
+</tr>
+<tr>
+<td><code>07</code></td>
+<td><code>[BELL]</code></td>
+</tr>
+<tr>
+<td><code>08</code></td>
+<td><code>[BACKSPACE]</code></td>
+</tr>
+<tr>
+<td><code>09</code></td>
+<td><code>[HORIZONTAL TAB]</code></td>
+</tr>
+<tr>
+<td><code>10</code></td>
+<td><code>[LINE FEED]</code></td>
+</tr>
+<tr>
+<td><code>11</code></td>
+<td><code>[VERTICAL TAB]</code></td>
+</tr>
+<tr>
+<td><code>12</code></td>
+<td><code>[FORM FEED]</code></td>
+</tr>
+<tr>
+<td><code>13</code></td>
+<td><code>[CARRIAGE RETURN]</code></td>
+</tr>
+<tr>
+<td><code>14</code></td>
+<td><code>[SHIFT OUT]</code></td>
+</tr>
+<tr>
+<td><code>15</code></td>
+<td><code>[SHIFT IN]</code></td>
+</tr>
+<tr>
+<td><code>16</code></td>
+<td><code>[DATA LINK ESCAPE]</code></td>
+</tr>
+<tr>
+<td><code>17</code></td>
+<td><code>[DEVICE CONTROL 1]</code></td>
+</tr>
+<tr>
+<td><code>18</code></td>
+<td><code>[DEVICE CONTROL 2]</code></td>
+</tr>
+<tr>
+<td><code>19</code></td>
+<td><code>[DEVICE CONTROL 3]</code></td>
+</tr>
+<tr>
+<td><code>20</code></td>
+<td><code>[DEVICE CONTROL 4]</code></td>
+</tr>
+<tr>
+<td><code>21</code></td>
+<td><code>[NEGATIVE ACKNOWLEDGE]</code></td>
+</tr>
+<tr>
+<td><code>22</code></td>
+<td><code>[SYNCHRONOUS IDLE]</code></td>
+</tr>
+<tr>
+<td><code>23</code></td>
+<td><code>[ENG OF TRANS BLOCK]</code></td>
+</tr>
+<tr>
+<td><code>24</code></td>
+<td><code>[CANCEL]</code></td>
+</tr>
+<tr>
+<td><code>25</code></td>
+<td><code>[END OF MEDIUM]</code></td>
+</tr>
+<tr>
+<td><code>26</code></td>
+<td><code>[SUBSTITUTE]</code></td>
+</tr>
+<tr>
+<td><code>27</code></td>
+<td><code>[ESCAPE]</code></td>
+</tr>
+<tr>
+<td><code>28</code></td>
+<td><code>[FILE SEPARATOR]</code></td>
+</tr>
+<tr>
+<td><code>29</code></td>
+<td><code>[GROUP SEPARATOR]</code></td>
+</tr>
+<tr>
+<td><code>30</code></td>
+<td><code>[RECORD SEPARATOR]</code></td>
+</tr>
+<tr>
+<td><code>31</code></td>
+<td><code>[UNIT SEPARATOR]</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ascii-printable-characters">ASCII Printable Characters</h2>
+<table>
+<thead>
+<tr>
+<th>Decimal</th>
+<th>Character</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>32</code></td>
+<td><code>[SPACE]</code></td>
+</tr>
+<tr>
+<td><code>33</code></td>
+<td><code class="highlight"><span class="sc">&#39;!&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>34</code></td>
+<td><code class="highlight"><span class="sc">&#39;&quot;&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>35</code></td>
+<td><code class="highlight"><span class="sc">&#39;#&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>36</code></td>
+<td><code class="highlight"><span class="sc">&#39;$&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>37</code></td>
+<td><code class="highlight"><span class="sc">&#39;%&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>38</code></td>
+<td><code class="highlight"><span class="sc">&#39;&amp;&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>39</code></td>
+<td><code class="highlight"><span class="sc">&#39;\&#39;&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>40</code></td>
+<td><code class="highlight"><span class="sc">&#39;(&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>41</code></td>
+<td><code class="highlight"><span class="sc">&#39;)&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>42</code></td>
+<td><code class="highlight"><span class="sc">&#39;*&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>43</code></td>
+<td><code class="highlight"><span class="sc">&#39;+&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>44</code></td>
+<td><code class="highlight"><span class="sc">&#39;,&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>45</code></td>
+<td><code class="highlight"><span class="sc">&#39;-&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>46</code></td>
+<td><code class="highlight"><span class="sc">&#39;.&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>47</code></td>
+<td><code class="highlight"><span class="sc">&#39;/&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>48</code></td>
+<td><code class="highlight"><span class="sc">&#39;0&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>49</code></td>
+<td><code class="highlight"><span class="sc">&#39;1&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>50</code></td>
+<td><code class="highlight"><span class="sc">&#39;2&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>51</code></td>
+<td><code class="highlight"><span class="sc">&#39;3&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>52</code></td>
+<td><code class="highlight"><span class="sc">&#39;4&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>53</code></td>
+<td><code class="highlight"><span class="sc">&#39;5&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>54</code></td>
+<td><code class="highlight"><span class="sc">&#39;6&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>55</code></td>
+<td><code class="highlight"><span class="sc">&#39;7&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>56</code></td>
+<td><code class="highlight"><span class="sc">&#39;8&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>57</code></td>
+<td><code class="highlight"><span class="sc">&#39;9&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>58</code></td>
+<td><code class="highlight"><span class="sc">&#39;:&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>59</code></td>
+<td><code class="highlight"><span class="sc">&#39;;&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>60</code></td>
+<td><code class="highlight"><span class="sc">&#39;&lt;&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>61</code></td>
+<td><code class="highlight"><span class="sc">&#39;=&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>62</code></td>
+<td><code class="highlight"><span class="sc">&#39;&gt;&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>63</code></td>
+<td><code class="highlight"><span class="sc">&#39;?&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>64</code></td>
+<td><code class="highlight"><span class="sc">&#39;@&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>65</code></td>
+<td><code class="highlight"><span class="sc">&#39;A&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>66</code></td>
+<td><code class="highlight"><span class="sc">&#39;B&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>67</code></td>
+<td><code class="highlight"><span class="sc">&#39;C&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>68</code></td>
+<td><code class="highlight"><span class="sc">&#39;D&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>69</code></td>
+<td><code class="highlight"><span class="sc">&#39;E&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>70</code></td>
+<td><code class="highlight"><span class="sc">&#39;F&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>71</code></td>
+<td><code class="highlight"><span class="sc">&#39;G&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>72</code></td>
+<td><code class="highlight"><span class="sc">&#39;H&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>73</code></td>
+<td><code class="highlight"><span class="sc">&#39;I&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>74</code></td>
+<td><code class="highlight"><span class="sc">&#39;J&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>75</code></td>
+<td><code class="highlight"><span class="sc">&#39;K&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>76</code></td>
+<td><code class="highlight"><span class="sc">&#39;L&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>77</code></td>
+<td><code class="highlight"><span class="sc">&#39;M&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>78</code></td>
+<td><code class="highlight"><span class="sc">&#39;N&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>79</code></td>
+<td><code class="highlight"><span class="sc">&#39;O&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>80</code></td>
+<td><code class="highlight"><span class="sc">&#39;P&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>81</code></td>
+<td><code class="highlight"><span class="sc">&#39;Q&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>82</code></td>
+<td><code class="highlight"><span class="sc">&#39;R&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>83</code></td>
+<td><code class="highlight"><span class="sc">&#39;S&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>84</code></td>
+<td><code class="highlight"><span class="sc">&#39;T&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>85</code></td>
+<td><code class="highlight"><span class="sc">&#39;U&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>86</code></td>
+<td><code class="highlight"><span class="sc">&#39;V&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>87</code></td>
+<td><code class="highlight"><span class="sc">&#39;W&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>88</code></td>
+<td><code class="highlight"><span class="sc">&#39;X&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>89</code></td>
+<td><code class="highlight"><span class="sc">&#39;Y&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>90</code></td>
+<td><code class="highlight"><span class="sc">&#39;Z&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>91</code></td>
+<td><code class="highlight"><span class="sc">&#39;[&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>92</code></td>
+<td><code class="highlight"><span class="sc">&#39;\\&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>93</code></td>
+<td><code class="highlight"><span class="sc">&#39;]&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>94</code></td>
+<td><code class="highlight"><span class="sc">&#39;^&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>95</code></td>
+<td><code class="highlight"><span class="sc">&#39;_&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>96</code></td>
+<td><code class="highlight"><span class="sc">&#39;`&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>97</code></td>
+<td><code class="highlight"><span class="sc">&#39;a&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>98</code></td>
+<td><code class="highlight"><span class="sc">&#39;b&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>99</code></td>
+<td><code class="highlight"><span class="sc">&#39;c&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>100</code></td>
+<td><code class="highlight"><span class="sc">&#39;d&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>101</code></td>
+<td><code class="highlight"><span class="sc">&#39;e&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>102</code></td>
+<td><code class="highlight"><span class="sc">&#39;f&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>103</code></td>
+<td><code class="highlight"><span class="sc">&#39;g&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>104</code></td>
+<td><code class="highlight"><span class="sc">&#39;h&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>105</code></td>
+<td><code class="highlight"><span class="sc">&#39;i&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>106</code></td>
+<td><code class="highlight"><span class="sc">&#39;j&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>107</code></td>
+<td><code class="highlight"><span class="sc">&#39;k&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>108</code></td>
+<td><code class="highlight"><span class="sc">&#39;l&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>109</code></td>
+<td><code class="highlight"><span class="sc">&#39;m&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>110</code></td>
+<td><code class="highlight"><span class="sc">&#39;n&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>111</code></td>
+<td><code class="highlight"><span class="sc">&#39;o&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>112</code></td>
+<td><code class="highlight"><span class="sc">&#39;p&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>113</code></td>
+<td><code class="highlight"><span class="sc">&#39;q&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>114</code></td>
+<td><code class="highlight"><span class="sc">&#39;r&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>115</code></td>
+<td><code class="highlight"><span class="sc">&#39;s&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>116</code></td>
+<td><code class="highlight"><span class="sc">&#39;t&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>117</code></td>
+<td><code class="highlight"><span class="sc">&#39;u&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>118</code></td>
+<td><code class="highlight"><span class="sc">&#39;v&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>119</code></td>
+<td><code class="highlight"><span class="sc">&#39;w&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>120</code></td>
+<td><code class="highlight"><span class="sc">&#39;x&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>121</code></td>
+<td><code class="highlight"><span class="sc">&#39;y&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>122</code></td>
+<td><code class="highlight"><span class="sc">&#39;z&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>123</code></td>
+<td><code class="highlight"><span class="sc">&#39;{&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>124</code></td>
+<td><code class="highlight"><span class="sc">&#39;|&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>125</code></td>
+<td><code class="highlight"><span class="sc">&#39;}&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>126</code></td>
+<td><code class="highlight"><span class="sc">&#39;~&#39;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code>127</code></td>
+<td><code>DELETE</code></td>
+</tr>
+</tbody>
+</table>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../datatypes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Datatypes" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Datatypes
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../operator-precedence-and-associativity/" class="md-footer__link md-footer__link--next" aria-label="Next: Operator Precedence and Associativity" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Operator Precedence and Associativity
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.467223ff.min.js"></script>
+      
+    
+  </body>
+</html>
