@@ -551,11 +551,11 @@
 </tr>
 <tr>
 <td><code class="highlight"><span class="kt">int</span><span class="w"></span></code></td>
-<td><code class="highlight"><span class="n">scanf</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">format</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">)</span><span class="w"></span></code></td>
+<td><code class="highlight"><span class="n">puts</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">str</span><span class="w"> </span><span class="p">)</span><span class="w"></span></code></td>
 </tr>
 <tr>
 <td><code class="highlight"><span class="kt">int</span><span class="w"></span></code></td>
-<td><code class="highlight"><span class="n">puts</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">str</span><span class="w"> </span><span class="p">)</span><span class="w"></span></code></td>
+<td><code class="highlight"><span class="n">scanf</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">format</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">)</span><span class="w"></span></code></td>
 </tr>
 <tr>
 <td><code class="highlight"><span class="kt">char</span><span class="o">*</span><span class="w"></span></code></td>
@@ -571,11 +571,35 @@
 </tr>
 <tr>
 <td><code class="highlight"><span class="kt">size_t</span><span class="w"></span></code></td>
-<td><code class="highlight"><span class="n">fread</span><span class="p">(</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">nmemb</span><span class="p">,</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span></code></td>
+<td><code class="highlight"><span class="n">fwrite</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">nmemb</span><span class="p">,</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code class="highlight"><span class="kt">int</span><span class="w"></span></code></td>
+<td><code class="highlight"><span class="n">fprintf</span><span class="p">(</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">format</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">)</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code class="highlight"><span class="kt">int</span><span class="w"></span></code></td>
+<td><code class="highlight"><span class="n">fputc</span><span class="p">(</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="kt">char</span><span class="p">,</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code class="highlight"><span class="kt">int</span><span class="w"></span></code></td>
+<td><code class="highlight"><span class="n">fputs</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="p">)</span><span class="w"></span></code></td>
 </tr>
 <tr>
 <td><code class="highlight"><span class="kt">size_t</span><span class="w"></span></code></td>
-<td><code class="highlight"><span class="n">fwrite</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">nmemb</span><span class="p">,</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span></code></td>
+<td><code class="highlight"><span class="n">fread</span><span class="p">(</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">nmemb</span><span class="p">,</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code class="highlight"><span class="kt">int</span><span class="w"></span></code></td>
+<td><code class="highlight"><span class="n">fscanf</span><span class="p">(</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">format</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">)</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code class="highlight"><span class="kt">int</span><span class="w"></span></code></td>
+<td><code class="highlight"><span class="n">fgetc</span><span class="p">(</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td><code class="highlight"><span class="kt">char</span><span class="o">*</span><span class="w"></span></code></td>
+<td><code class="highlight"><span class="n">fgets</span><span class="p">(</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span></code></td>
 </tr>
 <tr>
 <td><code class="highlight"><span class="kt">int</span><span class="w"></span></code></td>
@@ -596,13 +620,13 @@
 </code></pre></div>
 <p>Sends formatted output to stdout.</p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">scanf</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">format</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
-</code></pre></div>
-<p>Reads formatted input from stdin.</p>
-<hr />
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">puts</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">str</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <p>Writes a string to stdout up to but not including the null character. A newline character is appended to the output.</p>
+<hr />
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">scanf</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">format</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Reads formatted input from stdin.</p>
 <hr />
 <div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">gets</span><span class="p">(</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">str</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
@@ -668,17 +692,67 @@
 </code></pre></div>
 <p>Closes the stream. All buffers are flushed.</p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">size_t</span><span class="w"> </span><span class="n">fread</span><span class="p">(</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">nmemb</span><span class="p">,</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
-</code></pre></div>
-<p>Reads data from the given stream into the array pointed to by ptr.</p>
-<hr />
 <div class="highlight"><pre><span></span><code><span class="kt">size_t</span><span class="w"> </span><span class="n">fwrite</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">nmemb</span><span class="p">,</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <p>Writes data from the array pointed to by ptr to the given stream.</p>
 <hr />
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">fprintf</span><span class="p">(</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">format</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Sends formatted output to a stream.</p>
+<hr />
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">fputc</span><span class="p">(</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="kt">char</span><span class="p">,</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Writes a character (an unsigned char) specified by the argument char to the specified stream and advances the position indicator for the stream.</p>
+<hr />
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">fputs</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Writes a string to the specified stream up to but not including the null character.</p>
+<hr />
+<div class="highlight"><pre><span></span><code><span class="kt">size_t</span><span class="w"> </span><span class="n">fread</span><span class="p">(</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">nmemb</span><span class="p">,</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Reads data from the given stream into the array pointed to by ptr.</p>
+<hr />
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">fscanf</span><span class="p">(</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">format</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Reads formatted input from a stream.</p>
+<hr />
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">fgetc</span><span class="p">(</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Gets the next character (an unsigned char) from the specified stream and advances the position indicator for the stream.</p>
+<hr />
+<div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">fgets</span><span class="p">(</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Reads a line from the specified stream and stores it into the string pointed to by str. It stops when either (n-1) characters are read, the newline character is read, or the end-of-file is reached, whichever comes first.</p>
+<hr />
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">fseek</span><span class="p">(</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">offset</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">whence</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <p>Sets the file position of the stream to the given offset.</p>
+<table>
+<thead>
+<tr>
+<th>int</th>
+<th>whence</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>SEEK_SET</code></td>
+<td>Beginning of file</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>SEEK_CUR</code></td>
+<td>Current position of the file pointer</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>SEEK_END</code></td>
+<td>End of file</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <div class="highlight"><pre><span></span><code><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ftell</span><span class="p">(</span><span class="w"> </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
